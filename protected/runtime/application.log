@@ -1,0 +1,723 @@
+2013/12/02 08:38:29 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication./dispatch/themes/bootstrap" is not defined.' in C:\xampp\htdocs\YiiMain\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\base\CModule.php(105): CComponent->__get('/dispatch/theme...')
+#1 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(51): CModule->__get('/dispatch/theme...')
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\YiiMain\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\dispatch\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/dispatch/index.php/site/index
+HTTP_REFERER=http://localhost/dispatch/
+---
+2013/12/02 08:54:45 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in C:\xampp\htdocs\YiiMain\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(70): CComponent->__call('isAdmin', Array)
+#1 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(70): CWebUser->isAdmin()
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\YiiMain\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\dispatch\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/dispatch/index.php/site/index
+HTTP_REFERER=http://localhost/dispatch/
+---
+2013/12/02 08:54:45 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in C:\xampp\htdocs\YiiMain\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(70): CComponent->__call('isAdmin', Array)
+#1 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(70): CWebUser->isAdmin()
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\YiiMain\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\dispatch\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/dispatch/index.php/site/index
+HTTP_REFERER=http://localhost/dispatch/
+---
+2013/12/02 08:56:17 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbActiveForm" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(25): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 08:57:00 [error] [exception.CException] exception 'CException' with message 'Property "BsActiveForm.type" is not defined.' in C:\xampp\htdocs\YiiMain\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(161): CComponent->__set('type', 'horizontal')
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(25): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 08:57:05 [error] [exception.CException] exception 'CException' with message 'BsActiveForm and its behaviors do not have a method or closure named "textFieldRow".' in C:\xampp\htdocs\YiiMain\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(28): CComponent->__call('textFieldRow', Array)
+#1 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(28): BsActiveForm->textFieldRow(Object(LoginForm), 'username')
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 08:57:34 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(41): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 08:57:41 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BsButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(41): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 08:58:59 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BsButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\site\login.php(43): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dispatch/index.php/site/login
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:00:44 [error] [php] implode(): Invalid arguments passed (C:\xampp\htdocs\dispatch\protected\components\UserIdentity.php:25)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#1 C:\xampp\htdocs\YiiMain\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#2 C:\xampp\htdocs\YiiMain\framework\base\CModel.php(159): CInlineValidator->validate()
+#3 C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php(94): LoginForm->validate()
+#4 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php/site/login
+in C:\xampp\htdocs\dispatch\protected\components\UserIdentity.php (25)
+in C:\xampp\htdocs\dispatch\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\dispatch\protected\controllers\SiteController.php (94)
+2013/12/02 09:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\YiiMain\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dispatch/index.php/site/admin
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php/site/index
+HTTP_REFERER=http://localhost/dispatch/index.php/site/admin
+---
+2013/12/02 09:05:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/admin".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php/site/admin
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/admin".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php/site/admin
+HTTP_REFERER=http://localhost/dispatch/index.php/site/index
+---
+2013/12/02 09:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php/
+---
+2013/12/02 09:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home ".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home ".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home ".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home ".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/index".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/index".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:11:27 [error] [php] Array to string conversion (C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:318)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#1 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php
+in C:\xampp\htdocs\dispatch\index.php (13)
+2013/12/02 09:11:27 [error] [php] Array to string conversion (C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:318)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#1 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php
+in C:\xampp\htdocs\dispatch\index.php (13)
+2013/12/02 09:11:28 [error] [php] Array to string conversion (C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:318)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#1 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php
+in C:\xampp\htdocs\dispatch\index.php (13)
+2013/12/02 09:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dispatch/index.php/admin
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
+2013/12/02 09:23:59 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\YiiMain\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(495): tag()
+#2 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(2868): tag()
+#3 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(2844): menuLink()
+#4 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(3334): menu()
+#5 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\widgets\BsNav.php(97): nav()
+#6 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(173): BsNav->run()
+#7 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\widgets\BsNavbar.php(91): HomeController->widget()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(173): BsNavbar->run()
+#9 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(95): HomeController->widget()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): HomeController->renderInternal()
+#12 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#13 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#14 C:\xampp\htdocs\YiiMain\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#15 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(206): CContentDecorator->run()
+#16 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(300): HomeController->endWidget()
+#17 C:\xampp\htdocs\dispatch\protected\views\layouts\column1.php(6): HomeController->endContent()
+#18 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require()
+#19 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): HomeController->renderInternal()
+#20 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): HomeController->renderFile()
+#21 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): HomeController->render()
+#22 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#23 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams()
+#24 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): HomeController->runAction()
+#25 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): HomeController->runActionWithFilters()
+#26 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): HomeController->run()
+#27 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (495)
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (2868)
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (2844)
+2013/12/02 09:23:59 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\YiiMain\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(495): tag()
+#2 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(2868): tag()
+#3 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(2844): menuLink()
+#4 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php(3334): menu()
+#5 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\widgets\BsNav.php(97): nav()
+#6 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(173): BsNav->run()
+#7 C:\xampp\htdocs\dispatch\protected\modules\bootstrap\widgets\BsNavbar.php(91): HomeController->widget()
+#8 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(173): BsNavbar->run()
+#9 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\main.php(95): HomeController->widget()
+#10 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): HomeController->renderInternal()
+#12 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(76): HomeController->renderFile()
+#13 C:\xampp\htdocs\YiiMain\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#14 C:\xampp\htdocs\YiiMain\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#15 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(206): CContentDecorator->run()
+#16 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(300): HomeController->endWidget()
+#17 C:\xampp\htdocs\dispatch\protected\views\layouts\column1.php(6): HomeController->endContent()
+#18 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require()
+#19 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): HomeController->renderInternal()
+#20 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): HomeController->renderFile()
+#21 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): HomeController->render()
+#22 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#23 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams()
+#24 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): HomeController->runAction()
+#25 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): HomeController->runActionWithFilters()
+#26 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): HomeController->run()
+#27 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\dispatch\index.php(13): CWebApplication->run()
+REQUEST_URI=/dispatch/index.php
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (495)
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (2868)
+in C:\xampp\htdocs\dispatch\protected\modules\bootstrap\components\BSHtml.php (2844)
+2013/12/02 09:43:38 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:43:39 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:43:39 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:43:47 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BsMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:43:47 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BsMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:43:47 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BsMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:50:25 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:59:28 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 09:59:28 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\YiiMain\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(HomeController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\dispatch\themes\bootstrap\views\layouts\column2.php(18): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\YiiMain\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\dispatch\protected\controllers\HomeController.php(7): CController->render('index')
+#8 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): HomeController->actionIndex()
+#9 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/dispatch/index.php
+HTTP_REFERER=http://localhost/dispatch/index.php/admin
+---
+2013/12/02 10:21:00 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\YiiMain\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\YiiMain\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\dispatch\protected\controllers\LoginController.php(28): CController->render('login', Array)
+#2 C:\xampp\htdocs\YiiMain\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#3 C:\xampp\htdocs\YiiMain\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\YiiMain\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\YiiMain\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\YiiMain\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#8 C:\xampp\htdocs\YiiMain\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\dispatch\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dispatch/index.php/login
+HTTP_REFERER=http://localhost/dispatch/index.php
+---
